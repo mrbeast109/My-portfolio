@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+    --font-audiowide: "Audiowide", sans-serif;
+    --font-bitcount: "Bitcount Single", sans-serif;
+    --font-funnel: "Funnel Sans", sans-serif;
+    --animate-glass-pulse: glass-pulse 1.5s ease-in-out infinite alternate;
+    --animate-fade-in: fade-in 1s ease-out forwards;
+
+    @keyframes fade-in {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes glass-pulse {
+        0% {
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        100% {
+            border-color: rgba(255, 255, 255, 1);
+        }
+    }
+}
